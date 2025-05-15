@@ -12,31 +12,31 @@
     $M = 6.66;
     $N = 2.001;
 
-    echo nl2br("\nX value: " . $X
-        . "\nY value: " . $Y
-        . "\n Addtition: " . $X + $Y
-        . "\n Multiplication: " . $X * $Y
-        . "\n Remainder : " . $X % $Y);
-    echo nl2br("\n----------------------------------");
+    echo "<br/>X value: " . $X
+        . "<br/>Y value: " . $Y
+        . "<br/> Addtition: " . $X + $Y
+        . "<br/> Multiplication: " . $X * $Y
+        . "<br/> Remainder : " . $X % $Y;
+    echo "<br/>----------------------------------";
 
 
-    echo nl2br("\nM value: " . $M
-        . "\nN value: " . $N
-        . "\n Addtition: " . $M + $N
-        . "\n Multiplication: " . $M * $N
-        . "\n Remainder : " . $M % $N);
-    echo nl2br("\n----------------------------------");
+    echo "<br/>M value: " . $M
+        . "<br/>N value: " . $N
+        . "<br/> Addtition: " . $M + $N
+        . "<br/> Multiplication: " . $M * $N
+        . "<br/> Remainder : " . $M % $N;
+    echo "<br/>----------------------------------";
 
 
-    echo nl2br("\nX doubled: " . $X * 2
-        . "\nY doubled: " . $Y * 2
-        . "\nM doubled: " . $M * 2
-        . "\nN doubled: " . $N * 2
-        . "\n Summation: " . $X + $Y + $M + $N
-        . "\n Multiplication: " . $X * $Y * $M * $N);
-    echo nl2br("\n----------------------------------");
+    echo "<br/>X doubled: " . $X * 2
+        . "<br/>Y doubled: " . $Y * 2
+        . "<br/>M doubled: " . $M * 2
+        . "<br/>N doubled: " . $N * 2
+        . "<br/> Summation: " . $X + $Y + $M + $N
+        . "<br/> Multiplication: " . $X * $Y * $M * $N;
+    echo "<br/>----------------------------------";
 
-    function calculator(int|float $num1, int|float $num2, string $action): void
+    function calculator(int|float $num1, int|float $num2, string $action): string
     {
         $result = 0;
         switch ($action) {
@@ -55,10 +55,19 @@
             default:
                 $result = "Invalid operation";
         }
-        echo nl2br($result);
-        echo nl2br("\n----------------------------------");
+        return $result;
     }
+
+    //let's test the calculator
+    
+    echo "<br/>Addition result = " . calculator(1, 2, 'A');
+    echo "<br/>Substraction result = " . calculator(4, 6, 'S');
+    echo "<br/>Multiplication result = " . calculator(8.56, 2, 'M');
+    echo "<br/>Division result = " . calculator(41, 2.5, 'D');
     ?>
+
+
+
 
 </body>
 
