@@ -1,14 +1,9 @@
-<html>
-
-<head>
-    <title>Sprint 1 Exercise 1. Ibai Ramirez</title>
-    <!-- Define una variable de cada tipo: integer ,  double ,  string y boolean . Imprímelas por pantalla.
+  <!--Sprint 1 Exercise 1. Ibai Ramirez
+   Define una variable de cada tipo: integer ,  double ,  string y boolean . Imprímelas por pantalla.
 
     Después crea una constante que incluya tu nombre y muéstralo en formato título por pantalla.
     -->
-</head>
 
-<body>
     <?php
     define("MY_NAME", "Ibai");
     $integer = 6;
@@ -16,12 +11,7 @@
     $string = "I am a string";
     $boolean = true;
 
-    echo "<br/>Integer value: " . $integer . "<br/>Double value: " . $double . "<br/>String value: " . $string . "<br/>Boolean value: " . $boolean;
-    echo "<br/><h1>" . MY_NAME . "</h1>";
+    echo PHP_EOL . "Integer value: " . $integer . PHP_EOL . "Double value: " .  $double . PHP_EOL . "String value: " . $string . PHP_EOL .  "Boolean value: " . $boolean;
+    echo PHP_EOL . "<h1>" . MY_NAME . "</h1>";
 
     ?>
-
-
-</body>
-
-</html>

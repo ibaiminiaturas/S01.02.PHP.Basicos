@@ -1,8 +1,5 @@
-<html>
-
-<head>
-    <title>Sprint 1 Exercise 5. Ibai Ramirez</title>
-    <!--Escribir una función para verificar el grado de un/a estudiante de acuerdo con la nota.
+<!--Sprint 1 Exercise 5. Ibai Ramirez
+    Escribir una función para verificar el grado de un/a estudiante de acuerdo con la nota.
 
     Condiciones:
 
@@ -11,11 +8,8 @@
     Si la nota está entre 33% a 44%, el grado debería ser Tercera División.
     Si la nota es menor a 33%, el estudiante reprobará.
 -->
-</head>
 
-<body>
-
-    <?php
+<?php
 
     function verifyGrade(float|int $grade): string
     {
@@ -23,9 +17,9 @@
 
         if ($grade > 60) {
             $result = "Primera División";
-        } else if ($grade >= 45 && $grade < 60) {
+        } else if ($grade >= 45) {
             $result = "Segunda División";
-        } else if ($grade >= 33 && $grade < 45) {
+        } else if ($grade >= 33) {
             $result = "Tercera División";
         } else {
             $result = "El estudiante reprobará.";
@@ -46,7 +40,4 @@
     echo verifyGrade(13);
     echo PHP_EOL;
 
-    ?>
-</body>
-
-</html>
+?>

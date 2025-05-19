@@ -1,16 +1,9 @@
-<html>
-
-<head>
-    <title>Sprint 1 Exercise 6. Ibai Ramirez</title>
-    <!--Charlie me mordió el dedo! Charlie te morderá el dedo exactamente el 50% del tiempo.
+<!--Sprint 1 Exercise 6. Ibai Ramirez</title>
+    Charlie me mordió el dedo! Charlie te morderá el dedo exactamente el 50% del tiempo.
 
     Escribe La función isBitten () que devuelve TRUE con un 50% de probabilidad y FALSE de lo contrario.
-    -->
-</head>
-
-<body>
-
-    <?php
+-->
+<?php
 
     function isBitten(): bool
     {
@@ -32,7 +25,4 @@
         echo "The function result is :" . var_export(isBitten(), true);
     }
     echo PHP_EOL;
-    ?>
-</body>
-
-</html>
+?>
