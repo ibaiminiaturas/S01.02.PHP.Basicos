@@ -16,6 +16,10 @@ Siendo, por tanto, el total, 4.
 
 <?php
 
+const CHOCOLATE_PRICE = 1;
+const CHICLOS_PRICE = 0.5;
+const CARAMELOS_PRICE = 1.5;
+
 
 function addToShoppingCart(string $product, int $amount): float
 {
@@ -23,13 +27,13 @@ function addToShoppingCart(string $product, int $amount): float
 
     switch (strtolower($product)) {
         case "chocolate":
-            $result = $amount * 1;
+            $result = $amount * CHOCOLATE_PRICE;
             break;
         case "chiclos":
-            $result = $amount * 0.5;
+            $result = $amount * CHICLOS_PRICE;
             break;
         case "caramelos":
-            $result = $amount * 1.5;
+            $result = $amount * CARAMELOS_PRICE;
             break;
     }
 

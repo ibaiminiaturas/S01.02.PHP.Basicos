@@ -7,7 +7,7 @@ Cada minuto adicional a partir de los 3 primeros es un paso de contador y cuesta
 
 <?php
 
-function CallPrice(int $duration): float
+function callPrice(int $duration): float
 {
     $callPrice = 0.10;
     $extra = ($duration - 3) * 0.05 > 0 ? ($duration - 3) * 0.05 : 0;
@@ -18,7 +18,7 @@ function CallPrice(int $duration): float
 
 
 echo "El precio de una llama de 68 minutos es: " . CallPrice(68) . "€." . PHP_EOL;
-echo "El precio de una llama de 4 minutos es: " . CallPrice(duration: 5) . "€." . PHP_EOL;
+echo "El precio de una llama de 4 minutos es: " . CallPrice(5) . "€." . PHP_EOL;
 echo "El precio de una llama de 2 minutos es: " . CallPrice(2) . "€." . PHP_EOL;
 echo "El precio de una llama de 165 minutos es: " . CallPrice(165) . "€." . PHP_EOL;
 ?>
